@@ -1,22 +1,32 @@
 import os
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew, Process
+from crewai import LLM
 
+# Load environment variables
 load_dotenv()
 
-# Method 2: Use environment variables for LLM config[citation:7]
-os.environ["OPENAI_API_KEY"] = os.getenv("DEEPSEEK_API_KEY", "dummy")
-os.environ["OPENAI_API_BASE"] = os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com/v1")
-os.environ["OPENAI_MODEL_NAME"] = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+# Initialize Gemini LLM
+# The model format is 'gemini/gemini-model-name'
+# Free tier available models: gemini-2.0-flash, gemini-1.5-flash, gemini-1.5-pro
 
-# Your agents (they'll automatically use the env vars above)
+gemini_llm = LLM(
+    model="gemini/gemini-2.0-flash",
+    api_key=os.getenv("GEMINI_API_KEY"),
+    tools="google_search_retrieval"  # Enables Google Search
+)
+
+# Your iconic agents - same vibe, just with Gemini
 market_maven = Agent(
     role="Market Maven",
     goal="Find ALL the tea on AI customer service market - size, players, trends, the whole vibe",
     backstory="""Literally lives for market research. Has 47 tabs open at all times. 
     Sleeps at 3am reading Gartner reports like others read Wattpad. 
-    Knows what's trending before it trends. Coffee is their blood type.""",
-    verbose=True
+    Knows what's trending before it trends. Coffee is their blood type.
+    Uses Gemini's deep analysis to uncover market insights that others miss.""",
+    llm=gemini_llm,
+    verbose=True,
+    allow_delegation=False  # Prevents agent loops
 )
 
 strategy_wizard = Agent(
@@ -25,8 +35,11 @@ strategy_wizard = Agent(
     backstory="""Ex-consultant who left McKinsey but still gets excited about frameworks. 
     Makes SWOT analysis actually interesting (yes it's possible). 
     Known for saying 'wait this data is actually telling us something wild' 
-    and then explaining it in human language.""",
-    verbose=True
+    and then explaining it in human language.
+    Uses Gemini's reasoning to find strategic insights that aren't obvious.""",
+    llm=gemini_llm,
+    verbose=True,
+    allow_delegation=False
 )
 
 story_weaver = Agent(
@@ -35,11 +48,14 @@ story_weaver = Agent(
     backstory="""The only person who can explain AI to your aunt at Thanksgiving. 
     Used to write for TechCrunch but got tired of clickbait. 
     Turns complex analysis into narratives that don't put people to sleep. 
-    Believes 'professional' doesn't have to mean 'boring af'.""",
-    verbose=True
+    Believes 'professional' doesn't have to mean 'boring af'.
+    Uses Gemini's writing capabilities to craft engaging, executive-ready content.""",
+    llm=gemini_llm,
+    verbose=True,
+    allow_delegation=False
 )
 
-# The tasks
+# The tasks - same descriptions, now powered by Gemini
 task1 = Task(
     description="""Research the AI-powered customer service market in North America. 
     Find actual numbers and real trends, not just vibes.
@@ -117,5 +133,6 @@ crew = Crew(
     verbose=True
 )
 
+# Run it with your topic
 result = crew.kickoff(inputs={"topic": "AI-Powered Customer Service Solutions in North America"})
 print(result)

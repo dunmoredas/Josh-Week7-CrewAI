@@ -258,4 +258,196 @@ ur the goat fr thank u!!
 ### AI
 anytime! good luck with the grade, you got this 🚀
 
+### User
+turns out i have to pay to use the deepseek api. can you change everything so that it would match google gemini's api instead?
 
+### AI
+Say less! Let me convert everything to use Google Gemini API. It's actually pretty straightforward and Gemini has a generous free tier which is perfect for this assignment 🚀
+
+Here's the updated code:
+
+```python
+import os
+from dotenv import load_dotenv
+from crewai import Agent, Task, Crew, Process
+
+# Load environment variables
+load_dotenv()
+
+# Configure Gemini via environment variables
+os.environ["OPENAI_API_KEY"] = os.getenv("GEMINI_API_KEY")
+os.environ["OPENAI_API_BASE"] = "https://generativelanguage.googleapis.com/v1beta/"
+os.environ["OPENAI_MODEL_NAME"] = "gemini/gemini-2.0-flash"
+
+# Your iconic agents (same vibe, just with Gemini)
+market_maven = Agent(
+    role="Market Maven",
+    goal="Find ALL the tea on AI customer service market - size, players, trends, the whole vibe",
+    backstory="""Literally lives for market research. Has 47 tabs open at all times. 
+    Sleeps at 3am reading Gartner reports like others read Wattpad. 
+    Knows what's trending before it trends. Coffee is their blood type.
+    Uses Gemini's deep analysis to uncover market insights that others miss.""",
+    verbose=True
+)
+
+strategy_wizard = Agent(
+    role="Strategy Wizard",
+    goal="Turn messy market data into actual actionable strategies that make sense",
+    backstory="""Ex-consultant who left McKinsey but still gets excited about frameworks. 
+    Makes SWOT analysis actually interesting (yes it's possible). 
+    Known for saying 'wait this data is actually telling us something wild' 
+    and then explaining it in human language.
+    Uses Gemini's reasoning to find strategic insights that aren't obvious.""",
+    verbose=True
+)
+
+story_weaver = Agent(
+    role="Story Weaver",
+    goal="Make executive reports that people actually want to read",
+    backstory="""The only person who can explain AI to your aunt at Thanksgiving. 
+    Used to write for TechCrunch but got tired of clickbait. 
+    Turns complex analysis into narratives that don't put people to sleep. 
+    Believes 'professional' doesn't have to mean 'boring af'.
+    Uses Gemini's writing capabilities to craft engaging, executive-ready content.""",
+    verbose=True
+)
+
+# The tasks (same descriptions)
+task1 = Task(
+    description="""Research the AI-powered customer service market in North America. 
+    Find actual numbers and real trends, not just vibes.
+    
+    Specifically look for:
+    - How big is this market rn? ($ amount)
+    - Who are the main players? (top 5 companies)
+    - How fast is it growing? (%)
+    - What's trending? (3 big things happening)
+    - Who's buying this stuff? (customer demographics)
+    - Any red flags? (regulations, barriers, etc.)
+    
+    Make sure you have actual data points, not just 'it's growing fast'.""",
+    expected_output="""Market research doc with:
+    - Market size and growth projections (with numbers)
+    - Competitor rundown (names + market share)
+    - 3-5 key trends with explanations
+    - Customer profile (who, why, how much they spend)
+    - SWOT style analysis of the opportunity
+    - Citations/sources (even if estimated, say where from)""",
+    agent=market_maven
+)
+
+task2 = Task(
+    description="""Take the research and figure out what it actually means for business strategy.
+    
+    You need to give:
+    - Is now the right time to enter this market? (yes/no and why)
+    - What's the smartest way to do it? (acquisition, build in-house, partnership?)
+    - What could go wrong? (risks and how to deal with them)
+    - How much money are we talking? (ballpark investment and potential returns)
+    - What makes companies succeed or fail here?
+    
+    Be honest about risks - don't just paint a pretty picture.""",
+    expected_output="""Strategic analysis including:
+    - Feasibility assessment (can we do this?)
+    - Recommended approach (with reasoning)
+    - Risk analysis (bad stuff that could happen + backup plans)
+    - Resource needs (people, money, time)
+    - Financial projections (low, medium, high scenarios)
+    - Key success factors (what winners do differently)""",
+    agent=strategy_wizard,
+    context=[task1]
+)
+
+task3 = Task(
+    description="""Create the final executive report. Make it professional but not boring.
+    
+    Structure it like:
+    1. TL;DR version (executive summary - 1 page max)
+    2. The opportunity (what we found)
+    3. The strategy (what we should do)
+    4. Risks and how we handle them
+    5. Next steps (literally what happens Monday)
+    
+    Keep it concise but don't skip important details. 
+    Execs need to make decisions from this, so make it clear what they should do.""",
+    expected_output="""Executive report with:
+    - Title page (topic, date, who it's for)
+    - Executive summary (1 page, all the key points)
+    - Market analysis section (what we learned)
+    - Strategic recommendations (what we should do)
+    - Implementation plan (how we do it, timeline)
+    - Risk management (what could go wrong)
+    - Call to action (literally what to do next)""",
+    agent=story_weaver,
+    context=[task1, task2]
+)
+
+# Set up the crew
+crew = Crew(
+    agents=[market_maven, strategy_wizard, story_weaver],
+    tasks=[task1, task2, task3],
+    process=Process.sequential,
+    verbose=True
+)
+
+# Run it
+result = crew.kickoff(inputs={"topic": "AI-Powered Customer Service Solutions in North America"})
+print(result)
+```
+
+Also update your .env file:
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+And requirements.txt:
+
+```txt
+crewai==0.70.1
+python-dotenv==1.0.0
+google-generativeai==0.8.3
+```
+
+### User
+thanks sm! one more thing - i'm getting dependency conflicts when installing crewai-tools. do i even need it?
+
+### AI
+Nah you don't need crewai-tools at all for this assignment! The assignment just needs the 3 agents working sequentially with tasks and context. crewai-tools is only if you want web search or other external tools.
+
+Just install crewai alone:
+
+```bash
+pip uninstall crewai crewai-tools -y
+pip install crewai==0.70.1 python-dotenv google-generativeai
+```
+
+That should work with no conflicts 💪
+
+### User
+it's working now. how about the output.txt?
+
+### AI
+Ayyy let's gooo! 🎉 For output.txt, run:
+```bash
+python crew.py > output.txt 2>&1
+```
+This saves EVERYTHING that prints to the console - all agent thoughts, tasks, and the final report. Perfect for the assignment!
+
+### User
+bet thank u so much!! gonna go run this rn. hope my gemini api key works 💀
+
+### AI
+fingers crossed! gemini free tier is actually generous - 60 requests per minute. you'll be fine! come back if it crashes 💪
+
+### AI
+LESSS GOOOO! now you got:
+1. crew.py (with Gemini)
+2. output.txt (from running the code)
+3. prompt-log.md (this whole convo)
+4. README.md (your reflection)
+push to github and ur done! lmk if you need anything else 🚀
+
+### User
+ur the goat fr thank u!!
+
+### AI
+anytime! good luck with the grade, you got this 🚀
