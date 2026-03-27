@@ -1,0 +1,266 @@
+╭───────────────────────────────────────────────────────────── 🚀 Crew Execution Started ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Crew Execution Started                                                                                                                             │
+│  Name:                                                                                                                                              │
+│  crew                                                                                                                                               │
+│  ID:                                                                                                                                                │
+│  b005187d-9fe2-4fbb-a844-8b48003c2a4d                                                                                                               │
+│                                                                                                                                                     │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────────── 📋 Task Started ──────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Task Started                                                                                                                                       │
+│  Name: Research the AI-powered customer service market in North America.                                                                            │
+│      Find actual numbers and real trends, not just vibes.                                                                                           │
+│                                                                                                                                                     │
+│      Specifically look for:                                                                                                                         │
+│      - How big is this market rn? ($ amount)                                                                                                        │
+│      - Who are the main players? (top 5 companies)                                                                                                  │
+│      - How fast is it growing? (%)                                                                                                                  │
+│      - What's trending? (3 big things happening)                                                                                                    │
+│      - Who's buying this stuff? (customer demographics)                                                                                             │
+│      - Any red flags? (regulations, barriers, etc.)                                                                                                 │
+│                                                                                                                                                     │
+│      Make sure you have actual data points, not just 'it's growing fast'.                                                                           │
+│  ID: f68bd34f-04d4-4ff7-a5b7-b36bac20fede                                                                                                           │
+│                                                                                                                                                     │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Agent: Market Maven                                                                                                                                │
+│                                                                                                                                                     │
+│  Task: Research the AI-powered customer service market in North America.                                                                            │
+│      Find actual numbers and real trends, not just vibes.                                                                                           │
+│                                                                                                                                                     │
+│      Specifically look for:                                                                                                                         │
+│      - How big is this market rn? ($ amount)                                                                                                        │
+│      - Who are the main players? (top 5 companies)                                                                                                  │
+│      - How fast is it growing? (%)                                                                                                                  │
+│      - What's trending? (3 big things happening)                                                                                                    │
+│      - Who's buying this stuff? (customer demographics)                                                                                             │
+│      - Any red flags? (regulations, barriers, etc.)                                                                                                 │
+│                                                                                                                                                     │
+│      Make sure you have actual data points, not just 'it's growing fast'.                                                                           │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[91mAn unknown error occurred. Please check the details below.[0m
+
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Agent: Market Maven                                                                                                                                │
+│                                                                                                                                                     │
+│  Task: Research the AI-powered customer service market in North America.                                                                            │
+│      Find actual numbers and real trends, not just vibes.                                                                                           │
+│                                                                                                                                                     │
+│      Specifically look for:                                                                                                                         │
+│      - How big is this market rn? ($ amount)                                                                                                        │
+│      - Who are the main players? (top 5 companies)                                                                                                  │
+│      - How fast is it growing? (%)                                                                                                                  │
+│      - What's trending? (3 big things happening)                                                                                                    │
+│      - Who's buying this stuff? (customer demographics)                                                                                             │
+│      - Any red flags? (regulations, barriers, etc.)                                                                                                 │
+│                                                                                                                                                     │
+│      Make sure you have actual data points, not just 'it's growing fast'.                                                                           │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Agent: Market Maven                                                                                                                                │
+│                                                                                                                                                     │
+│  Task: Research the AI-powered customer service market in North America.                                                                            │
+│      Find actual numbers and real trends, not just vibes.                                                                                           │
+│                                                                                                                                                     │
+│      Specifically look for:                                                                                                                         │
+│      - How big is this market rn? ($ amount)                                                                                                        │
+│      - Who are the main players? (top 5 companies)                                                                                                  │
+│      - How fast is it growing? (%)                                                                                                                  │
+│      - What's trending? (3 big things happening)                                                                                                    │
+│      - Who's buying this stuff? (customer demographics)                                                                                             │
+│      - Any red flags? (regulations, barriers, etc.)                                                                                                 │
+│                                                                                                                                                     │
+│      Make sure you have actual data points, not just 'it's growing fast'.                                                                           │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+ERROR:root:OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}[0m
+
+Traceback (most recent call last):
+╭─────────────────────────────────────────────────────────────────── ❌ LLM Error ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  LLM Call Failed                                                                                                                                    │
+│  Error: OpenAI API call failed: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code':     │
+│  'invalid_request_error'}}                                                                                                                          │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/crew.py", line 120, in <module>
+╭────────────────────────────────────────────────────────────────── 📋 Task Failure ──────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Task Failed                                                                                                                                        │
+│  Name:                                                                                                                                              │
+│  Research the AI-powered customer service market in North America.                                                                                  │
+│      Find actual numbers and real trends, not just vibes.                                                                                           │
+│                                                                                                                                                     │
+│      Specifically look for:                                                                                                                         │
+│      - How big is this market rn? ($ amount)                                                                                                        │
+│      - Who are the main players? (top 5 companies)                                                                                                  │
+│      - How fast is it growing? (%)                                                                                                                  │
+│      - What's trending? (3 big things happening)                                                                                                    │
+│      - Who's buying this stuff? (customer demographics)                                                                                             │
+│      - Any red flags? (regulations, barriers, etc.)                                                                                                 │
+│                                                                                                                                                     │
+│      Make sure you have actual data points, not just 'it's growing fast'.                                                                           │
+│  Agent:                                                                                                                                             │
+│  Market Maven                                                                                                                                       │
+│                                                                                                                                                     │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────────────────────── Crew Failure ────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Crew Execution Failed                                                                                                                              │
+│  Name:                                                                                                                                              │
+│  crew                                                                                                                                               │
+│  ID:                                                                                                                                                │
+│  b005187d-9fe2-4fbb-a844-8b48003c2a4d                                                                                                               │
+│                                                                                                                                                     │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+    result = crew.kickoff(inputs={"topic": "AI-Powered Customer Service Solutions in North America"})
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/crew.py", line 714, in kickoff
+
+╭────────────────────────────────────────────────────────────────── Tracing Status ───────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                     │
+│  Info: Tracing is disabled.                                                                                                                         │
+│                                                                                                                                                     │
+│  To enable tracing, do any one of these:                                                                                                            │
+│  • Set tracing=True in your Crew/Flow code                                                                                                          │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                                                      │
+│  • Run: crewai traces enable                                                                                                                        │
+│                                                                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+    result = self._run_sequential_process()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/crew.py", line 1073, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/crew.py", line 1159, in _execute_tasks
+    task_output = task.execute_sync(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/task.py", line 458, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/task.py", line 695, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/task.py", line 626, in _execute_core
+    result = agent.execute_task(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agent/core.py", line 444, in execute_task
+    result = self.execute_task(task, context, tools)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agent/core.py", line 444, in execute_task
+    result = self.execute_task(task, context, tools)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agent/core.py", line 443, in execute_task
+    raise e
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agent/core.py", line 410, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agent/core.py", line 506, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 196, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 320, in _invoke_loop
+    raise e
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 237, in _invoke_loop
+    answer = get_llm_response(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 276, in get_llm_response
+    raise e
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 268, in get_llm_response
+    answer = llm.call(
+             ^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/llms/providers/openai/completion.py", line 209, in call
+    return self._handle_completion(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/llms/providers/openai/completion.py", line 510, in _handle_completion
+    raise e from e
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/crewai/llms/providers/openai/completion.py", line 422, in _handle_completion
+    response: ChatCompletion = self.client.chat.completions.create(**params)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 925, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joshdunmoredas/Documents/Academics/Business Analytics/IIMT3688/Josh-Week7-CrewAI/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
