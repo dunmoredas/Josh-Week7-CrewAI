@@ -1,2 +1,3 @@
+# Don't commit .env or your virtual environment files
 .env
 venv
